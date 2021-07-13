@@ -1,6 +1,8 @@
+package HC_Desafio02;
+
 import java.util.Scanner;
 
-public class Desafio02 {
+public class HC_Desafio02 {
     public static void main(String[] args) {
 
         // Exercicio 1
@@ -58,17 +60,17 @@ public class Desafio02 {
 
         // Exercicio 4
         System.out.println("Exercicio 4");
-        System.out.print("Insira um numero de no maximo 4 digitos: ");
+        System.out.print("Insira um número de no máximo 4 dígitos: ");
         int valor = s.nextInt();
         if (valor > 9999){
-            System.out.println("Valor inserido invalido!");
+            System.out.println("Valor inserido inválido!");
         } else {
             int resto = 0;
             while (valor > 0) {
                 resto = resto * 10 + valor % 10;
                 valor /= 10;
             }
-            System.out.println("Numero invertido: " + resto);
+            System.out.println("Número invertido: " + resto);
         }
 
 
