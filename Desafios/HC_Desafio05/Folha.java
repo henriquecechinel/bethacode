@@ -123,25 +123,20 @@ public class Folha {
         return desconto;
     }
 
-    public Double calcular(){
-        Double salarioLiquido = calcular(null);
-
-        return salarioLiquido;
+    public void calcular(){
+        this.calcular(null);
     }
 
-    public Double calcular(Desconto[] descontos){
-        Double salarioLiquido = calcular(descontos, null);
-
-        return salarioLiquido;
+    public void calcular(Desconto[] descontos){
+        this.calcular(descontos, null);
     }
 
-    public Double calcular(Desconto[] descontos, Double bonus){
+    public void calcular(Desconto[] descontos, Double bonus){
         Double salarioBruto = funcionario.getSalarioBruto();
         Double salarioLiquido = salarioBruto;
 
         if(salarioBruto == null){
             System.out.println("O Funcionário não possuí Salário Bruto!");
-            return 0.0;
         }
 
         System.out.println("\nSalário Bruto + Bônus: R$" + salarioBruto);
@@ -163,6 +158,6 @@ public class Folha {
 
         System.out.println("Salário liquido: R$" + salarioLiquido);
 
-        return salarioLiquido;
+        this.salarioLiquido = salarioLiquido;
     }
 }

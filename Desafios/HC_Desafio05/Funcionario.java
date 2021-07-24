@@ -14,14 +14,11 @@ public class Funcionario {
     }
 
     public Funcionario(Integer id, String nome, String cpf) {
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
+        new Funcionario(id,nome,cpf,null);
     }
 
     public Funcionario(Integer id, String nome) {
-        this.id = id;
-        this.nome = nome;
+        new Funcionario(id,nome,null);
     }
 
     public Integer getId() {
