@@ -6,6 +6,8 @@ public abstract class AbstractPessoa {
     private String cpf;
     private Double salario;
 
+    public AbstractPessoa(){};
+
     public AbstractPessoa(Integer id, String nome, String cpf, Double salario) {
         this.id = id;
         this.nome = nome;

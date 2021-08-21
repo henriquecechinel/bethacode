@@ -1,6 +1,8 @@
 package HC_Desafio07.model;
 
 public class Funcionario extends AbstractPessoa{
+    public Funcionario(){};
+
     public Funcionario(Integer id, String nome, String cpf, Double salario) {
         super(id, nome, cpf, salario);
     }

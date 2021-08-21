@@ -2,6 +2,8 @@ package HC_Desafio07;
 
 import HC_Desafio07.model.Diretor;
 import HC_Desafio07.model.Funcionario;
+import HC_Desafio07.repository.DiretorRepository;
+import HC_Desafio07.repository.FuncionarioRepository;
 import HC_Desafio07.service.DiretorService;
 import HC_Desafio07.service.FuncionarioService;
 
@@ -38,5 +40,14 @@ public class Main {
         System.out.println(diretorService.update(diretor1));
 
         System.out.println(diretorService.delete(diretor2));
+
+        FuncionarioRepository funcionarioRepository = new FuncionarioRepository();
+        DiretorRepository diretorRepository = new DiretorRepository();
+
+        System.out.println(funcionarioRepository.findAll());
+        System.out.println(funcionarioRepository.findById(1));
+
+        System.out.println(diretorRepository.findAll());
+        System.out.println(diretorRepository.findById(1));
     }
 }
